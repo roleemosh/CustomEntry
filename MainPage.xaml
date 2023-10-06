@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CustomEntry.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:control="clr-namespace:CustomEntry">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="There is no custom Background" />
+
+            <control:CustomEntryControl HeightRequest="55" Placeholder="Valid Text" />
+            <control:CustomEntryControl
+                HeightRequest="55"
+                IsValid="False"
+                Placeholder="Not Valid Text" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
